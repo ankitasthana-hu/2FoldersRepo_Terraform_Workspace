@@ -1,0 +1,1 @@
+TF PLAN/APPLY to deploy WordPress Application on Cloud
