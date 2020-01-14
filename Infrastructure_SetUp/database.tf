@@ -5,9 +5,9 @@ resource "aws_db_instance" "wordpress_db" {
   engine               = "mysql"
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
-  name                 = "BV_Database"
   username             = "admin"
   password             = "admin@123"
+  name                 = "bv_database"
   parameter_group_name = "mysql5.7"
 }
 
