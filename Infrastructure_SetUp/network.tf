@@ -35,3 +35,14 @@ resource "aws_vpc" "wordpress_vpc" {
   enable_dns_hostnames = true
   instance_tenancy     = "dedicated"
 }
+
+######################### TRYING to User Function CIDRSUBNET###################
+#Trying to generate private and public CIDR through fucntion command
+/*
+data "template_file" "public_cidrsubnet" {
+
+  template = "$${cidrsubnet(var.vpc_cidr,8,1)}"
+
+}
+*/
+##############################################################################

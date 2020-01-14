@@ -1,3 +1,6 @@
+###• Created the infrastructure into a VPC with the CIDR block 10.10.0.0/21 and create at
+##least 2 private and 2 public subnets
+
 variable "vpc_cidr" {
   description = "VPC cidr"
   default     = "10.10.0.0/21"
@@ -21,4 +24,22 @@ variable "private_cidr1" {
 variable "private_cidr2" {
   description = "Private Subnet-2"
   default     = "10.10.3.0/24"
+}
+
+##Use Frankfurt region
+variable "region" {
+  default     = "eu-central-1"
+}
+
+variable "ssh_port" {
+  default = 22
+}
+
+variable "nfs_port" {
+  default = 2049
+}
+
+##The wordpress site should be reachable only on HTTP port
+variable "http_port" {
+  default = 80
 }
