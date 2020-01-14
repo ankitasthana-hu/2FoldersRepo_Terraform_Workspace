@@ -28,7 +28,7 @@ variable "private_cidr2" {
 
 ##Use Frankfurt region
 variable "region" {
-  default     = "eu-central-1"
+  default     = "us-west-2"
 }
 
 variable "ssh_port" {
