@@ -8,12 +8,12 @@ variable "key_name" {
 
 variable "region" {
   description = "Region"
-  default     = "us-west-2"
+  default     = "eu-central-1"
 }
 
 variable "instance_type" {
   description = "free tier instance type"
-  default     = "t2.small"
+  default     = "t2.micro"
 }
 
 variable "volume_size" {
