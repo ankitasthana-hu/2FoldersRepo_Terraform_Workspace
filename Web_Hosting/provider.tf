@@ -16,9 +16,6 @@ data "terraform_remote_state" "wordpress_state_deploy" {
 }
 
 
-terraform {
-  required_version = "= 0.10"
-}
 
 
 
