@@ -68,14 +68,14 @@ resource "aws_security_group" "wp_sg" {
     from_port   = "${var.ssh_port}"
     to_port     = "${var.ssh_port}"
     protocol    = "tcp"
-    cidr_blocks = ["10.10.0.0/21"] #need to specify the IP adress but i just gave the CIDR block of the VPC
+    cidr_blocks = ["10.10.0.0/21"] 
   }
 
   ingress {
     from_port   = "${var.http_port}"
     to_port     = "${var.http_port}"
     protocol    = "tcp"
-    cidr_blocks = ["10.10.0.0/21"] #need to specify the IP adress but i just gave the CIDR block of the VPC
+    cidr_blocks = ["10.10.0.0/21"] 
   }
 
   ingress {
