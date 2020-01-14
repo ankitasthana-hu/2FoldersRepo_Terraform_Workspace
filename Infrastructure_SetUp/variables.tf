@@ -43,3 +43,13 @@ variable "nfs_port" {
 variable "http_port" {
   default = 80
 }
+
+variable "credentials_file" {
+  description = "The AWS configure credentials file"
+  default = "/c/Users/anasthan/project/wp_project/bv_terraform_workspace/Infrastructure_SetUp/.aws/credentials"
+}
+
+variable "aws_profile" {
+  description = "The AWS configure profile"
+  default = "ankit_cred"
+}
