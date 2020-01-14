@@ -1,6 +1,8 @@
+/*
 variable "private_key_path" {
   default = "C:\\Private_Key_Pair\bv_europe_key.pem"   
 }
+*/
 
 variable "key_name" { 
   default = "bv_europe_key"  
