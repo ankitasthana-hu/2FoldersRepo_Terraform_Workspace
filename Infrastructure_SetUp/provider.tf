@@ -3,9 +3,5 @@ terraform {
 }
 
 
-provider "aws" {
-  shared_credentials_file = "${var.credentials_file}"
-  profile                 = "${var.aws_profile}"
- 
-}
+
 
