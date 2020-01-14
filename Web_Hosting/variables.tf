@@ -10,7 +10,7 @@ variable "key_name" {
 
 variable "region" {
   description = "Region"
-  default     = "eu-central-1"
+  default     = "us-west-2"
 }
 
 variable "instance_type" {
