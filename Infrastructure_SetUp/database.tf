@@ -12,6 +12,6 @@ resource "aws_db_instance" "wordpress_db" {
 }
 
 resource "aws_db_subnet_group" "wordpress_subnet_group" {
-  name       = "BV_Subnet_Group"
+  name       = "subnetgroup_bv"
   subnet_ids = [aws_subnet.private_1.id, aws_subnet.private_2.id]
 }
